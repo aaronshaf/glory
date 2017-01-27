@@ -9,10 +9,10 @@
   }
   @keyframes zoomOut {
     0% {
-      transform: scale(40) rotate(180deg);
+      transform: scale(40) rotate(360deg);
     }
     100% {
-      transform: scale(1) rotate(0deg);
+      transform: scale(2) rotate(0deg);
     }
   }
   .container {
@@ -22,13 +22,13 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-image: url(https://www.spacetelescope.org/static/archives/images/large/opo1103c.jpg);
+    background-image: url(glory.jpg);
     background-position: 52.5% 30%;
     background-repeat: no-repeat;
     animation-name: zoomOut;
     animation-iteration-count: 1;
-    animation-duration: 10s;
-    animation-timing-function: ease;
+    animation-duration: 200s;
+    animation-timing-function: cubic-bezier(.38,.72,0,1.06);
   }
   </style>
   <body>
